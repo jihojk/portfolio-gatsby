@@ -9,7 +9,9 @@ html, body{
     font-family: $font;
     font-size: 16px;
     background: black;
-    color: white;
+    color: red;
+    padding: 0;
+    margin: 0;
 }
 
 .container {
@@ -48,8 +50,8 @@ header {
                 font-weight: 800;
                 text-decoration: none;
                 letter-spacing: 1.5px;
-                color: white;
-                font-size: 25px;
+                color: red;
+                font-size: 30px;
 
             }
 
@@ -63,7 +65,8 @@ header {
                 letter-spacing: 1.75px;
                 text-transform: uppercase;
                 font-size: 0.75rem;
-                color: white;
+                font-weight: 800;
+                color: red;
                 &:last-child{
                     margin-right: 0px;
                 }
@@ -86,24 +89,82 @@ header {
     .row{
         position: relative;
         .main-text {
-            font-size: 5.8rem;
+            font-size: 6rem;
             text-transform: uppercase;
-            letter-spacing: 42px;
+            letter-spacing: 38px;
             font-weight: 700;
-            color:white;
+            color:red;
             position: absolute;
             width: 100%;
             left: 0;
             top: 50%;
             transform: translateY(-50%);
             text-align: center;
-            mix-blend-mode: difference;
+            mix-blend-mode: normal;
             z-index: 9;
             @media (max-width: 1440px){
                 font-size: 4.4rem;
                 letter-spacing: 36px;
                 
             }
+        }
+        .side-text{
+            position: relative;
+            float: right;
+            font-weight: 700;
+            font-size: 3rem;
+
+        }
+        .main-image{
+            width: 536px;
+            margin: 0 auto;
+            @media(max-width: 1440){
+                width: 436px;
+            }
+        }
+    }
+    .scroll{
+        font-weight: 700;
+        font-size: .875rem;
+        letter-spacing: 1.5px;
+        color: red;
+        text-transform: uppercase;
+        position: absolute;
+        bottom: 48px;
+    }
+}
+
+// About Blurb
+
+.about-blurb{
+    padding: 48px 0;
+    background: black;
+    position: relative;
+    .inner-blurb{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .content{
+            width: 33%;
+            @media(max-width: 1440px){
+                width: ;
+            }
+            h3{
+
+            }
+            p{
+
+            }
+            .btn-row{
+                a{
+
+                }
+            }
+        .images{
+            .profile-image{
+
+            }
+        }
         }
     }
 }

@@ -8,7 +8,7 @@ import {Link} from "gatsby"
 const AboutBlurb = () => {
     const data = useStaticQuery(graphql`
     query {
-      meImg: file(relativePath: { eq: "me.jpg" }) {
+      meImg: file(relativePath: { eq: "meImg.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
@@ -24,11 +24,12 @@ const AboutBlurb = () => {
                 <div className="inner-blurb">
                   <div className="content">
                     <h3> About Me </h3>
-                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p> Full-Stack Web developer with a background in Marketing (Digital Marketing) to develop new apps and user experiences on the web. Recently earned a Full Stack Development certificate from Trilogy at the University of California, Irvine with skills in Javascript, CSS, HTML, React.JS, and Sql. Extremely interested in trying to develop the next big social media application. With each project, I want to bring a new way to socialize on the Internet. I am excited to use the skills I learned as part of a team to create fresh social media applications and user experiences on the Web.</p>
                     <div className="btn-row">
 
                       <Link  to="/projects"> My Projects </Link>
                     </div>
+        
 
                   </div>
                   <div className="images">
@@ -36,6 +37,7 @@ const AboutBlurb = () => {
                     <Img fluid={data.meImg.childImageSharp.fluid} />
                     </div>
                   </div>
+        
                 
                 </div>
               

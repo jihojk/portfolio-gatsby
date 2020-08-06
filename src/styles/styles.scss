@@ -89,9 +89,9 @@ header {
     .row{
         position: relative;
         .main-text {
-            font-size: 6rem;
+            font-size: 10rem;
             text-transform: uppercase;
-            letter-spacing: 38px;
+            letter-spacing: 20px;
             font-weight: 700;
             color:red;
             position: absolute;
@@ -165,15 +165,14 @@ header {
                 margin: 40px 0 72px;
 
             }
-            .btn-row{
-                a{ font-weight: 700;
-                    font-size: 14px;
-                    letter-spacing: 1.5px;
-                    color: red;
-                    text-transform: uppercase;
-                    text-decoration: none;
-
-                }
+            .scroll{
+                font-weight: 700;
+                font-size: .875rem;
+                letter-spacing: 1.5px;
+                color: red;
+                text-transform: uppercase;
+                position: absolute;
+                bottom: 100px;
             }
     }
     .images{
@@ -193,16 +192,86 @@ header {
             z-index: 4;
 
         }
-}
+} 
 }
 }
 
+// projects
+.projects{
+    padding: 48px 0;
+    background: black;
+    position: relative;
+    .project-title{
+        
+            font-size: 10rem;
+            text-transform: uppercase;
+            letter-spacing: 20px;
+            font-weight: 700;
+            color:red;
+            position: relative;
+            width: 100%;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            text-align: center;
+            mix-blend-mode: normal;
+            z-index: 9;
+            @media (max-width: 1440px){
+                font-size: 4.4rem;
+                letter-spacing: 36px;
+                
+            }
+    }
+    .project-1{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .project1-img{
+            width: 50%;
+            position: relative;
+
+        }
+        .project1-content{
+            .about1{
+                 width: 33%;
+            @media(max-width: 1440px){
+                width: 40%;}
+    
+
+                h3{
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    font-size: 2rem;
+                    letter-spacing: 1.5px;
+                    margin: 0;
+                }
+                p{
+                    font-size: 1.2rem;
+                    line-height: 2rem;
+                    font-weight: 300;
+                    margin: 40px 0 72px;
+                }
+                a{
+                text-decoration: none;
+                letter-spacing: 1.75px;
+                text-transform: uppercase;
+                font-size: 0.75rem;
+                font-weight: 800;
+                color: red;
+                }
+
+            }
+        }
+    }
+}
 
 
 //footer
     .footer {
       background: white;
       height: 80px;
+      margin-top: 30px;
+      margin-bottom: 0px;
       .inner {
         padding: 0 120px;
         height: 80px;

@@ -10,21 +10,21 @@ const Projects = () => {
     query {
       treasureBox: file(relativePath: { eq: "treasurebox.png" }) {
         childImageSharp {
-          fluid(maxWidth: 300) {
+          fluid(maxWidth: 500) {
             ...GatsbyImageSharpFluid
           }
         }
       }
       chefspick: file(relativePath: { eq: "chefspick.png" }) {
         childImageSharp {
-          fluid(maxWidth: 300) {
+          fluid(maxWidth: 500) {
             ...GatsbyImageSharpFluid
           }
         }
       }
       burgerbuilder: file(relativePath: { eq: "burgerbuilder.png" }) {
         childImageSharp {
-          fluid(maxWidth: 300) {
+          fluid(maxWidth: 500) {
             ...GatsbyImageSharpFluid
           }
         }

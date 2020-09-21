@@ -29,7 +29,6 @@ const Projects = () => {
           }
         }
       }
-
     }
   `)
 
@@ -56,7 +55,6 @@ const Projects = () => {
                 <div className="project1-img">
                     <Img fluid={data.treasureBox.childImageSharp.fluid} />
                 </div>
-
                
 
 
@@ -67,24 +65,22 @@ const Projects = () => {
     
               
             </div>
-
             <div className="project-1">
         
         <div className="project1-content"> 
             <div className="about1">
 
-                <h3> The Chef's Pick</h3>
+                <h3> The Chefs Pick </h3>
           
 
-                <p> A recipe finder application where users can enter a list of ingredients and search up a recipe that utilizes those ingredients. </p>
+                <p>  An online recipe finder that lets users input multiple ingredients and look up recipes that utilize the ingredients. This application utilizes api  calls to generate recipes based on the user inputs </p>
 
-                <a href="https://the-chefs-pick.netlify.app"> Visit Project</a>
+                <a href="https://github.com/jihojk/Chefs-Pick-Recipe-Finder"> Visit Project</a>
              </div>
 
         <div className="project1-img">
-            <Img fluid={data.treasureBox.childImageSharp.fluid} />
+            <Img fluid={data.chefspick.childImageSharp.fluid} />
         </div>
-
        
 
 
@@ -95,24 +91,22 @@ const Projects = () => {
 
       
     </div>
-
     <div className="project-1">
         
         <div className="project1-content"> 
             <div className="about1">
 
-                <h3> Treasure Box </h3>
+                <h3> Burger Builder </h3>
           
 
-                <p> An e-commerce app with social media like features built using the  MERN stack. I worked on most of the back-end code, including implementing  the user signup and login, image uploads, user profile pages, like and comment feature on posts, and personalized timelines based on users you follow. </p>
+                <p> A digital menu application that lets users custom build a hamburger and place an order. The app is designed to have a interactive experience when ordering a hamburger. </p>
 
-                <a href="https://project-3-treasurebox.herokuapp.com/signin"> Visit Project</a>
+                <a href="https://github.com/jihojk/burger-builder"> Visit Project</a>
              </div>
 
         <div className="project1-img">
-            <Img fluid={data.treasureBox.childImageSharp.fluid} />
+            <Img fluid={data.burgerbuilder.childImageSharp.fluid} />
         </div>
-
        
 
 

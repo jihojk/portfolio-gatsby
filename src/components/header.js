@@ -1,5 +1,6 @@
-import { Link } from "gatsby"
 import React from "react"
+import { Link } from "gatsby"
+
 
 const Header = () => (
   <header>
@@ -10,15 +11,15 @@ const Header = () => (
             <Link to="/"> Jiho John Kim </Link>
           
         </div>
-        <div className="navigation">
+        {/* <div className="navigation">
             <nav>
-                <Link to="/aboutBlurb"> About </Link>
-                <Link to="/projects"> Projects </Link>
-                <Link to="/footer"> Contact </Link>
+                <Link to="/aboutBlurb/"> About </Link>
+                <Link to="/projects/"> Projects </Link>
+                <Link to="/footer/"> Contact </Link>
               
             </nav> 
 
-        </div>
+        </div> */}
         </div>
 
     </div>
